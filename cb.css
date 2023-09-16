@@ -1,0 +1,69 @@
+/* Chatbot toggler styles */
+.chatbot-toggler {
+    width: 50px;
+    /* Adjust the width and height to your preference */
+    height: 50px;
+    background-color: #007bff;
+    /* Background color for the circle */
+    border-radius: 50%;
+    /* Makes it a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Add a smooth transition effect */
+}
+
+/* Chatbot icon styles */
+.chatbot-icon {
+    width: 30px;
+    /* Size of the icon */
+    height: 30px;
+    position: relative;
+    transform: rotate(0deg);
+    /* Initial rotation */
+    transition: transform 0.3s ease;
+    /* Add a smooth transition effect */
+}
+
+/* Downward arrow inside the icon */
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+    /* Arrow color */
+    position: absolute;
+    bottom: 5px;
+    /* Adjust the position of the arrow as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Center the arrow horizontally */
+}
+
+/* Style for the toggler when the chatbot is open (you can adjust these styles) */
+.chatbot-toggler.opened {
+    background-color: #ccc;
+    /* Change color when chatbot is open */
+}
+
+/* Style for the icon when the chatbot is open (you can adjust these styles) */
+.chatbot-toggler.opened .chatbot-icon {
+    transform: rotate(180deg);
+    /* Rotate the arrow when chatbot is open */
+}
+
+/*.chatbox .incoming span {
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    cursor: default;
+    text-align: center;
+    line-height: 32px;
+    align-self: flex-end;
+    background: #559166;
+    border-radius: 4px;
+    margin: 0 10px 7px 0;
+}
